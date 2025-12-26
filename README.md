@@ -4,128 +4,50 @@
 
 # API & Backend Design (.NET)
 
-> Repository này tập trung vào **API & Backend Design** trong .NET,  
-> theo góc nhìn của **Solution Architect .NET**.
+> Repo này tập trung vào **API & Backend Design** chuyên sâu trong ASP.NET Core / .NET, phục vụ **thực hành & best practice** cho Solution Architect / Senior .NET Engineer.
 
 ---
 
-## 🎯 Mục tiêu
+## 🎯 Trọng tâm
 
-- Hệ thống hóa tư duy **API & Backend** từ thiết kế đến triển khai
-- Hiểu rõ:
-  - API contracts, versioning, error handling
-  - Modular backend, clean & hexagonal architecture
-  - Event-driven / Async patterns
-- Chuẩn bị phỏng vấn **Solution Architect / Senior .NET Engineer**
-- Là nền tảng cho các demo backend thực tế
+- RESTful API design (contract, resource modeling, status codes)
+- Idempotency
+- Pagination / Filtering / Sorting
+- Rate limiting
+- Backward compatibility (versioning, breaking changes)
 
 ---
 
-## 🧠 Phạm vi nội dung
+## ⚡ .NET Focus
 
-### 1. API Design
-
-- Contract design (DTO, request/response)
-- Versioning strategy (URI, header, media-type)
-- Validation & exception handling
-- Idempotency / Retry patterns
-- Rate limiting & throttling (conceptual)
-
-### 2. Backend Architecture (.NET)
-
-- Clean Architecture
-- Modular Monolith
-- Dependency Injection
-- Service / Repository / Domain Layer
-- Event-driven communication (Domain Event / Integration Event)
-- Async patterns (Background Services, Message Queue)
-
-### 3. Data & Storage
-
-- Database modeling (relational & NoSQL)
-- Migrations & versioning
-- Caching strategies (Memory, Redis)
-- Transaction / Consistency patterns (Unit of Work, Saga)
-
-### 4. Security & Auth
-
-- Authentication / Authorization
-- JWT, OAuth2
-- Claims-based / Role-based access
-- Securing API endpoints
-
-### 5. Observability
-
-- Logging, metrics, tracing
-- Health checks
-- Exception monitoring
-- Correlation IDs
+- ASP.NET Core Web API (Controllers, Endpoints)
+- Model binding & validation
+- Filters vs Middleware
+- Swagger / OpenAPI documentation
 
 ---
 
-## 🧪 Demo & Labs
+## 🧪 Demo & Repo chuyên sâu
 
-Các demo minh họa:
+Các demo minh họa thực hành API patterns & backend design sẽ nằm trong **repo con**: `architecture-api-design-dotnet`
 
-- Modular Monolith API sample (ASP.NET Core)
-- API Versioning demo
-- Async messaging & domain events
-- Error handling & logging
-- Secure endpoints & auth demo
+Ví dụ demo bao gồm:
 
-> Các demo lớn được tách thành các repository riêng trong folder `demos/`.
-
----
-
-## 📐 Documentation-first Approach
-
-- **Documentation → Design → Implementation**
-- Mỗi demo có **docs đi kèm**
-- ADR ghi lại **trade-off và quyết định**
-- Code là **kết quả cuối cùng**, không phải tutorial
+- RESTful API mẫu
+- Versioning & backward compatibility
+- Rate limiting & error handling
+- Model binding & validation patterns
+- Swagger/OpenAPI setup
 
 ---
 
 ## 📌 Định hướng sử dụng
 
-- Ôn tập kiến thức API & Backend Design
-- Chuẩn bị phỏng vấn Solution Architect / Senior Engineer
-- Tham khảo cho các project thực tế
-- Là cơ sở để phát triển các repo backend khác
+- Thực hành API & Backend design theo .NET best practice
+- Ôn tập kiến thức khi chuẩn bị phỏng vấn Solution Architect / Senior .NET Engineer
+- Là cơ sở để phát triển các demo, repo chuyên sâu khác
 
 ---
 
 ## 🔗 Cấu trúc đề xuất
 
-```
-api-backend-design-dotnet/
-│
-├── README.md
-├── README.en.md
-│
-├── docs/
-│   ├── architecture/
-│   │   ├── context-diagram.md
-│   │   ├── container-diagram.md
-│   │   ├── component-diagram.md
-│   │   └── decision-records/
-│   │       └── ADR-001-api-design.md
-│   │
-│   ├── api-guidelines.md
-│   └── backend-principles.md
-│
-├── demos/
-│   ├── modular-monolith/
-│   ├── api-versioning/
-│   ├── async-messaging/
-│   └── auth-secure-demo/
-```
-
----
-
-## ✅ Trạng thái hiện tại
-
-- [x] API & Backend Design overview
-- [x] Demo folder structure
-- [ ] ADR & trade-off notes
-- [ ] C4 diagrams cho backend
